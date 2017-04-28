@@ -47,7 +47,7 @@ $(document).ready(function(){
 	$('button').click(
     function() {
 		  console.log('Add')
-      $('.my-list').append("<li>" + $('input:textbox').val()  + "</li>" + "<span>My to-do</span> <a href='#' class='delete'>" );
+      $('.my-list').append('<li><span>' + $(".new-item").val() + '</span> <a href="#" class="delete">[done]</a></li>');
     });
   $('.delete').click(
     function(){
