@@ -49,9 +49,7 @@ $(document).ready(function(){
 		  console.log('Add')
       $('.my-list').append('<li><span>' + $(".new-item").val() + '</span> <a href="#" class="delete">[done]</a></li>');
     });
-  $('.delete').click(
-    function(){
-      console.log('Delete')
-      $(this).find().closet('li').detach()
+  $('.delete').click(function() {
+    $(this).parent().remove();
     });
 });
